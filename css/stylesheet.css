@@ -1779,10 +1779,11 @@ background: rgba(245, 93, 0, 0.2);
 tag.blown {
 background: rgba(140, 46, 0, 0.2);
 }
+
 tag.green {
     background: rgba(0, 135, 107, 0.2);
 }
-tag.pink {
+tag.red {
     background: rgba(255, 0, 26, 0.2);
 }
 .bg_blown {
@@ -1791,6 +1792,24 @@ background-color: #f7f7f7;
 
 .white {
 background-color: #ffffff;
+}
+.green {
+background: rgba(0, 135, 107, 0.2);
+}
+.orange {
+background: rgba(245, 93, 0, 0.2);
+}
+.blue {
+background: rgba(0, 120, 223, 0.2);
+}
+.red {
+background: rgba(255, 0, 26, 0.2);
+}
+.yellow {
+background: rgba(233, 168, 0, 0.2);
+}
+.blown {
+background: rgba(140, 46, 0, 0.2);
 }
 
 .copyright {
