@@ -20,7 +20,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-MDQDGJK');</script>
 <!-- End Tag Manager -->
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <title>Wenjie Yang - CSE@HKUST</title>
 </head>
 <body class='page'>
@@ -30,10 +30,32 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Tag Manager (noscript) -->
 <div class='page-content'>
 <div class='white'>
+
 <div class='profile write'>
+<div id="menu" class="float-right">
+	<div>
+		<a href="index.html">Home</a>
+	</div>
+	<div>
+		<a href="portfolio.html">Portfolio</a>
+    </div>
+</div>
+<script>
+      $(function () {
+        const current = window.location.pathname.split("/");
+        console.log("current")
+        $('#menu div a').each(function(){
+          const $this = $(this);
+          if (current.indexOf($this.attr("href")) !== -1) {
+            $this.addClass("now");
+          }
+        })
+      });
+    </script>
 <h1 id='wenjie-yang'> Wenjie Yang 🐻</h1>
+
 <div class="img_container float-right">
-<img class="td_info_img z-depth-1" src="imgs/avatar.jpg" referrerpolicy="no-referrer" alt="avatar">
+<img class="td_info_img z-depth-1 " src="imgs/avatar.jpg" referrerpolicy="no-referrer" alt="avatar">
 <div>
 <p>
 <a href="mailto:wjyccs@gmail.com">Email</a> |
@@ -65,7 +87,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <li>[2021.04] Shared my work on the HKUST-SJTU joint doctoral consortium.</li>
 </ul>
 
-<h2 id='research'><span>Selected Publication</span></h2>
+<h2 id='research'>Selected Publication</h2>
 <table>
 <tbody>
 	<tr>
@@ -107,7 +129,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 			<br>
 			<tag class="yellow">DIS</tag> 
-			<i>ACM Designing Interactive Systems Conference, 2020 </i>
+			<i>ACM Designing Interactive Systems Conference, 2020</i>
 			<br>
 			[<a href='src/pub/dis20_sun_postcard.pdf'>pdf</a>] [<a href='https://dl.acm.org/doi/abs/10.1145/3357236.3395475'>ACM DL</a>]
 		</td>
@@ -131,7 +153,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 			<br>
 			<tag class="yellow">IPCCC</tag> 
-			<i>IEEE International Performance Computing and Communications Conference, 2018</i> 
+			<i>IEEE International Performance Computing and Communications Conference, 2018</i>
 			<br>
 			[<a href='src/pub/ipccc18_yang_bfur.pdf'>pdf</a>]  [<a href='https://ieeexplore.ieee.org/document/8711341'>IEEE Xplore</a>] 
 		</tr>
@@ -162,7 +184,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <h2 id='teaching_experience'><span>Teaching Experience</span></h2>
 <ul>
-	<li>Teaching Assistant of Introduction to Computer Science@HKUST [Fall 2021]</li>
+	<li>Teaching Assistant of Introduction to Computer Science @HKUST [Fall 2021]</li>
 </ul>
 
 </div>
