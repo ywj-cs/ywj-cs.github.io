@@ -43,11 +43,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <script>
       $(function () {
         const current = window.location.pathname.split("/");
-        console.log("current")
         $('#menu div a').each(function(){
           const $this = $(this);
           if (current.indexOf($this.attr("href")) !== -1) {
             $this.addClass("now");
+          }
+          else if ((current[current.length-1]=="") && ($this.attr("href")=="index.html")){
+          	$this.addClass("now");
           }
         })
       });

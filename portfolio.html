@@ -41,17 +41,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 </div>
 <script>
-    $(function () {
-      const current = window.location.pathname.split("/");
-      console.log("current")
-      $('#menu div a').each(function(){
-        const $this = $(this);
-        if (current.indexOf($this.attr("href")) !== -1) {
-          $this.addClass("now");
-        }
-      })
-    });
-  </script>
+      $(function () {
+        const current = window.location.pathname.split("/");
+        $('#menu div a').each(function(){
+          const $this = $(this);
+          if (current.indexOf($this.attr("href")) !== -1) {
+            $this.addClass("now");
+          }
+          else if ((current[current.length-1]=="") && ($this.attr("href")=="index.html")){
+            $this.addClass("now");
+          }
+        })
+      });
+    </script>
 <h1 id='wenjie-yang'> Wenjie Yang 🐻</h1>
 
 <font color="blue">This page is still being constructed. I'll be back soon! :)</font>
