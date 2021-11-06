@@ -87,7 +87,7 @@ height: 220px;
 }
 
 .three {
-height: 544px;
+width: 544px;
 }
 
 .project_container {
@@ -127,7 +127,7 @@ opacity: 1;
 }
 
 .text {
-padding: 20px;
+padding: 0px 20px 20px 20px;
 }
 
 .text p {
@@ -1338,6 +1338,7 @@ font-size: 1.3125em;
 line-height: 1.15;
 /*24 / 21*/
 /*margin-top: 2.285714em;*/
+/*margin-top: 1.15em;*/
 margin-top: 1.15em;
 /*48 / 21*/
 margin-bottom: 1.15em;
