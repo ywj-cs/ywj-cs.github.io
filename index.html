@@ -1,226 +1,209 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-<meta charset='UTF-8'>
-<meta name='viewport' content='width=device-width initial-scale=1'>
-<link rel="stylesheet" type="text/css" href="css/stylesheet.css?v=20211104v">
-<link rel="icon" type="image/x-icon" href="imgs/icon.ico">
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-EGWEDWNELX"></script>
-<script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width initial-scale=1" />
+        <link rel="stylesheet" type="text/css" href="css/stylesheet.css?v=20211104v" />
+        <link rel="icon" type="image/x-icon" href="imgs/icon.ico" />
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-EGWEDWNELX"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
 
-gtag('config', 'G-EGWEDWNELX');
-</script>
-<!-- Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-MDQDGJK');</script>
-<!-- End Tag Manager -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<title>Wenjie Yang - CSE@HKUST</title>
-</head>
-<body class='page'>
-<!-- Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MDQDGJK"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Tag Manager (noscript) -->
-<div class='page-content'>
-<div class='white'>
+            gtag("config", "G-EGWEDWNELX");
+        </script>
+        <!-- Tag Manager -->
+        <script>
+            (function (w, d, s, l, i) {
+                w[l] = w[l] || [];
+                w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+                var f = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s),
+                    dl = l != "dataLayer" ? "&l=" + l : "";
+                j.async = true;
+                j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+                f.parentNode.insertBefore(j, f);
+            })(window, document, "script", "dataLayer", "GTM-MDQDGJK");
+        </script>
+        <!-- End Tag Manager -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <title>Wenjie Yang - CSE@HKUST</title>
+    </head>
+    <body class="page">
+        <!-- Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MDQDGJK" height="0" width="0" style="display: none; visibility: hidden;"></iframe></noscript>
+        <!-- End Tag Manager (noscript) -->
+        <div class="page-content">
+            <div class="white">
+                <div class="profile write">
+                    <div id="menu" class="float-right">
+                        <div>
+                            <a href="index.html">Home</a>
+                        </div>
+                    </div>
+                    <script>
+                        $(function () {
+                            const current = window.location.pathname.split("/");
+                            $("#menu div a").each(function () {
+                                const $this = $(this);
+                                if (current.indexOf($this.attr("href")) !== -1) {
+                                    $this.addClass("now");
+                                } else if (current[current.length - 1] == "" && $this.attr("href") == "index.html") {
+                                    $this.addClass("now");
+                                }
+                            });
+                        });
+                    </script>
+                    <h1 id="wenjie-yang">Chris Wenjie Yang 🐻</h1>
 
-<div class='profile write'>
-<div id="menu" class="float-right">
-	<div>
-		<a href="index.html">Home</a>
-	</div>
-</div>
-<script>
-      $(function () {
-        const current = window.location.pathname.split("/");
-        $('#menu div a').each(function(){
-          const $this = $(this);
-          if (current.indexOf($this.attr("href")) !== -1) {
-            $this.addClass("now");
-          }
-          else if ((current[current.length-1]=="") && ($this.attr("href")=="index.html")){
-          	$this.addClass("now");
-          }
-        })
-      });
-    </script>
-<h1 id='wenjie-yang'> Chris Wenjie Yang 🐻</h1>
+                    <div class="img_container float-right">
+                        <img class="td_info_img z-depth-1" src="imgs/avatar.jpg" referrerpolicy="no-referrer" alt="avatar" />
+                        <div>
+                            <p>
+                                <a href="mailto:wjyccs@gmail.com">Email</a> | <a href="https://drive.google.com/file/d/1IeoDzs0hM359plUeg5dlVqGcry-V2FKf/view?usp=sharing">CV</a> | <a href="https://github.com/Kelaxon">Github</a> | 
+                                <a href="https://hkustconnect-my.sharepoint.com/:b:/g/personal/wyangbc_connect_ust_hk/EQbyaD82pwdPoSPnoYM48h0Bjo2cRVWB4AVc7THxPmFzbA?e=ya8eXs">中文简历</a>
+                                <br />
+                                <b> I'm seeking new research and engineering opportunities! (2023.05 update) </b>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="td_info_desc">
+                        <p>
+                            I am a visiting researcher at Carnegie Mellon University, where I am advised by Prof. <a href="https://kraut.hciresearch.info/"> Robert Kraut</a>, <a href="https://haiyizhu.com/">Haiyi Zhu</a>, and
+                            <a href="http://www.diyiyang.com/">Diyi Yang</a>. Recently, I completed my Master's degree (MPhil) in Computer Science Engineering at the Hong Kong University of Science and Technology (HKUST), where I was
+                            advised by Prof. <a href="https://www.cse.ust.hk/~mxj/"> Xiaojuan Ma</a>.
+                        </p>
 
-<div class="img_container float-right">
-<img class="td_info_img z-depth-1 " src="imgs/avatar.jpg" referrerpolicy="no-referrer" alt="avatar">
-<div>
-<p>
-<a href="mailto:wjyccs@gmail.com">Email</a> |
-<a href="https://drive.google.com/file/d/1IeoDzs0hM359plUeg5dlVqGcry-V2FKf/view?usp=sharing">💡CV </a> |
-<a href="https://github.com/Kelaxon">Github</a>
-<br>
-<small><i>I'm looking for PhD positions for 23Fall</i></small>
-</p>
-</div>			
-</div>
-<div class="td_info_desc">
-		<p>
-			I am a research associate at Human-Computer Interaction Institute (<a href="https://hcii.cmu.edu/">HCII</a>), Carnegie Mellon University, where I am advised by Prof. <a href="https://kraut.hciresearch.info/"> Robert Kraut</a>, <a href="https://haiyizhu.com/">Haiyi Zhu</a>, and <a href="http://www.diyiyang.com/">Diyi Yang</a>. I recently completed my Master's degree (MPhil) in Computer Science Engineering (<a href="https://cse.hkust.edu.hk/">CSE</a>) at Hong Kong University of Science and Technology (HKUST), where I was advised by Prof. <a href='https://www.cse.ust.hk/~mxj/'> Xiaojuan Ma</a>.
-		</p>
+                        <p>
+                            I specialize in <span class="yellow"> developing advanced computational methods to extract actionable insights from complex and large-scale data</span>. I have extensive experience in analyzing massive data,
+                            designing studies, and executing projects independently, which includes tasks like data collection, processing, modeling, visualization, and communicating findings with stakeholders. My work has focused on
+                            addressing critical challenges in health, social media, and society, and has been published in top-tier computer science venues such as CHI, ICWSM, CSCW, and DIS, with more to come.
+                        </p>
 
-		<p>
-		I am interested in <span class="yellow">social computing</span> and <span class="yellow">artificial intelligence</span> (especially natural language processing).
-		My recent research goal is to understand <b>human behavior in online communities</b>, and create <b>intelligent technologies</b> to augment human capabilities</b>. While my current projects focus on extracting insights from large behavior data using mixed methods informed by social science theories, I also plan to build AI systems to put the insights into practice.
+                        <p>
+                            Currently, I am actively expanding my direction to <span class="red"> design and build interactive systems and intelligent interfaces</span> that can transform quantitative findings into effective interventions.
+                            With a robust tech background in full-stack development, applied ML, NLP, and HCI, I'm confident in my ability to contribute to any job opportunity that comes my way. <i> Please feel free to connect with me!</i>
+                        </p>
+                    </div>
+                </div>
+            </div>
 
-</div>
-</div>
-</div>
+            <div class="section write">
+                <h2 id="research">Selected Publications</h2>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td class="td_img">
+                                <div class="center-cropped z-depth-1" style="background-image: url('./imgs/pub_imgs/akbc_22.png');" />
+                            </td>
+                            <td class="td_pub">
+                                <papertitle> Building Knowledge Graphs of Experientially Related Concepts.</papertitle>
+                                <br />
+                                <strong><u>Wenjie Yang</u></strong>, Xiaojuan Ma
 
-<div class="section write">
-<!-- <h2 id='recent-news'><span>Recent News</span></h2>
-<ul>
-<li>[2022.05] One paper has been accepted to CSCW 2022! Thanks to my co-authors!</li>
-<li>[2022.02] Our paper <i>"How to Save Lives with Microblogs? Lessons From the Usage of Weibo for Requests for Medical Assistance During COVID-19"</i> has been conditionally accepted by CHI'22!</li>
-</ul> -->
+                                <br />
+                                <tag class="yellow">AKBC</tag>
+                                <i>Conference on Automated Knowledge Base Construction, 2022</i>
+                                <br />
+                                (To appear)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td_img">
+                                <div class="center-cropped z-depth-1" style="background-image: url('./imgs/pub_imgs/cscw_22.png');" />
+                            </td>
+                            <td class="td_pub">
+                                <papertitle> "Help! Can You Hear Me?": Understanding How Help-Seeking Posts are Overwhelmed on Social Media during a Natural Disaster</papertitle>
+                                <br />
+                                Changyang He*, Yue Deng*, <strong><u>Wenjie Yang</u></strong>, Bo Li
 
-<h2 id='research'>Selected Publication</h2>
-<table>
-<tbody>
-	<tr>
-		<td class='td_img'>
-			<div class="center-cropped z-depth-1" style="background-image: url('./imgs/pub_imgs/akbc_22.png');"/>
+                                <br />
+                                <tag class="yellow">CSCW</tag>
+                                <i>Proceedings of the ACM on Human-Computer Interaction, 2022</i>
+                                <br />
+                                [<a href="https://arxiv.org/abs/2205.12535">arXiv</a>]
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td_img">
+                                <div class="center-cropped z-depth-1" style="background-image: url('./imgs/pub_imgs/chi_22.png');" />
+                            </td>
+                            <td class="td_pub">
+                                <papertitle> How to Save Lives With Microblogs? Lessons From the Usage of Weibo for Requests for Medical Assistance During COVID-19</papertitle>
+                                <br />
+                                <strong><u>Wenjie Yang</u></strong>, Zhiyang Wu, Nga Yiu Mok, Xiaojuan Ma
 
-		</td>
-		<td class="td_pub">
-				<papertitle> Building Knowledge Graphs of Experientially Related Concepts.</papertitle>
-			<br>
-			<strong><u>Wenjie Yang</u></strong>, Xiaojuan Ma
+                                <br />
+                                <tag class="yellow">CHI</tag>
+                                <i>ACM Conference on Human Factors in Computing Systems, 2022</i>
+                                <br />
+                                [<a href="https://arxiv.org/abs/2204.07371">arXiv</a>] [<a href="https://dl.acm.org/doi/10.1145/3491102.3517591">ACM DL</a>] [<a href="./src/misc/slides_chi22_helpseeker.pdf">slides</a>] [
+                                <a href="https://youtu.be/5d90XVruw2I">talk</a>]
+                            </td>
+                        </tr>
 
-			<br>
-			<tag class="yellow">AKBC</tag> 
-			<i>Conference on Automated Knowledge Base Construction, 2022</i>
-			<br>
-			(To appear) 
-		</td>
-	</tr>
-	<tr>
-		<td class='td_img'>
-			<div class="center-cropped z-depth-1" style="background-image: url('./imgs/pub_imgs/cscw_22.png');"/>
+                        <tr>
+                            <td class="td_img">
+                                <div class="center-cropped z-depth-1" style="background-image: url('./imgs/pub_imgs/icwsm_21.png');" referrerpolicy="no-referrer" />
+                            </td>
+                            <td class="td_pub">
+                                <papertitle>Know it to Defeat it: Exploring Health Rumor Characteristics and Debunking Efforts on Chinese Social Media During COVID-19 Crisis</papertitle>
+                                <br />
 
-		</td>
-		<td class="td_pub">
-				<papertitle> "Help! Can You Hear Me?": Understanding How Help-Seeking Posts are Overwhelmed on Social Media during a Natural Disaster</papertitle>
-			<br>
-			Changyang He*, Yue Deng*, <strong><u>Wenjie Yang</u></strong>, Bo Li
+                                <strong><u>Wenjie Yang</u></strong>, Sitong Wang*, Zhenhui Peng*, Chuhan Shi, Xiaojuan Ma, Diyi Yang
 
-			<br>
-			<tag class="yellow">CSCW</tag> 
-			<i>Proceedings of the ACM on Human-Computer Interaction, 2022</i>
-			<br>
-			[<a href='https://arxiv.org/abs/2205.12535'>arXiv</a>] 
-		</td>
-	</tr>
-	<tr>
-		<td class='td_img'>
-			<div class="center-cropped z-depth-1" style="background-image: url('./imgs/pub_imgs/chi_22.png');"/>
+                                <br />
+                                <tag class="yellow">ICWSM</tag> <i>AAAI Conference on Web and Social Media, 2022 </i>
+                                <br />
+                                [<a href="https://arxiv.org/abs/2109.12372">arXiv</a>] [<a href="https://github.com/Kelaxon/COVID-19_Health_Rumor">dataset</a>]
+                            </td>
+                        </tr>
 
-		</td>
-		<td class="td_pub">
-				<papertitle> How to Save Lives With Microblogs? Lessons From the Usage of Weibo for Requests for Medical Assistance During COVID-19</papertitle>
-			<br>
-			<strong><u>Wenjie Yang</u></strong>,
-			Zhiyang Wu,
-			Nga Yiu Mok,
-			Xiaojuan Ma
+                        <tr>
+                            <td class="td_img">
+                                <div class="center-cropped z-depth-1" style="background-image: url('./imgs/pub_imgs/dis_20.jpg');" />
+                            </td>
+                            <td class="td_pub">
+                                <papertitle>"A Postcard from Your Food Journey in the Past": Promoting Self-Reflection on Social Food Posting</papertitle>
+                                <br />
+                                Zhida Sun, Sitong Wang,
+                                <strong><u>Wenjie Yang</u></strong>, Onur Yürüten, Chuhan Shi, Xiaojuan Ma
 
-			<br>
-			<tag class="yellow">CHI</tag> 
-			<i>ACM Conference on Human Factors in Computing Systems, 2022</i>
-			<br>
-			[<a href='https://arxiv.org/abs/2204.07371'>arXiv</a>] [<a href='https://dl.acm.org/doi/10.1145/3491102.3517591'>ACM DL</a>] [<a href='./src/misc/slides_chi22_helpseeker.pdf'>slides</a>] [<a href='https://youtu.be/5d90XVruw2I'>talk</a>]
-		</td>
-	</tr>
+                                <br />
+                                <tag class="red">DIS</tag>
+                                <i>ACM Designing Interactive Systems Conference, 2020</i>
+                                <br />
+                                [<a href="src/pub/dis20_sun_postcard.pdf">pdf</a>] [<a href="https://dl.acm.org/doi/abs/10.1145/3357236.3395475">ACM DL</a>]
+                            </td>
+                        </tr>
 
-	<tr>
-		<td class='td_img'>
-			<div class="center-cropped z-depth-1" style="background-image: url('./imgs/pub_imgs/icwsm_21.png');" referrerpolicy="no-referrer"/>
-		</td>
-		<td class="td_pub">
-				<papertitle>Know it to Defeat it: Exploring Health Rumor Characteristics and Debunking Efforts on Chinese Social Media During COVID-19 Crisis</papertitle>
-			<br>
+                        <tr>
+                            <td class="td_img">
+                                <div class="center-cropped z-depth-1" style="background-image: url('./imgs/pub_imgs/ipccc_18.png');" referrerpolicy="no-referrer" />
+                            </td>
+                            <td class="td_pub">
+                                <papertitle>Budget-feasible User Recruitment in Mobile Crowdsensing with User Mobility Prediction</papertitle>
 
-			<strong><u>Wenjie Yang</u></strong>,
-			Sitong Wang*,
-			Zhenhui Peng*,
-			Chuhan Shi,
-			Xiaojuan Ma,
-			Diyi Yang
+                                <br />
 
-			<br>
-			<tag class="yellow">ICWSM</tag> <i>AAAI Conference on Web and Social Media, 2022 </i>
-			<br>
-			[<a href='https://arxiv.org/abs/2109.12372'>arXiv</a>] [<a href='https://github.com/Kelaxon/COVID-19_Health_Rumor'>dataset</a>]
-		</td>
-	</tr>
+                                <strong><u>Wenjie Yang</u></strong>, Guodong Sun, Xingjian Ding, Xiaoyue Zhang
 
-	<tr>
-		<td class='td_img'>
-			<div class="center-cropped z-depth-1" style="background-image: url('./imgs/pub_imgs/dis_20.jpg');"/>
-
-		</td>
-		<td class="td_pub">
-				<papertitle>"A Postcard from Your Food Journey in the Past": Promoting Self-Reflection on Social Food Posting</papertitle>
-			<br>
-			Zhida Sun,
-			Sitong Wang,
-			<strong><u>Wenjie Yang</u></strong>,
-			Onur Yürüten,
-			Chuhan Shi,
-			Xiaojuan Ma
-
-			<br>
-			<tag class="yellow">DIS</tag> 
-			<i>ACM Designing Interactive Systems Conference, 2020</i>
-			<br>
-			[<a href='src/pub/dis20_sun_postcard.pdf'>pdf</a>] [<a href='https://dl.acm.org/doi/abs/10.1145/3357236.3395475'>ACM DL</a>]
-		</td>
-	</tr>
-
-	<tr>
-		<td class='td_img'>
-			<div class="center-cropped z-depth-1" style="background-image: url('./imgs/pub_imgs/ipccc_18.png');" referrerpolicy="no-referrer"/>
-
-		</td>
-		<td class="td_pub">
-				<papertitle>Budget-feasible User Recruitment in Mobile Crowdsensing with User Mobility Prediction</papertitle>
-			
-			<br>
-
-			<strong><u>Wenjie Yang</u></strong>,
-			Guodong Sun,
-			Xingjian Ding,
-			Xiaoyue Zhang
-
-
-			<br>
-			<tag class="yellow">IPCCC</tag> 
-			<i>IEEE International Performance Computing and Communications Conference, 2018</i>
-			<br>
-			[<a href='src/pub/ipccc18_yang_bfur.pdf'>pdf</a>]  [<a href='https://ieeexplore.ieee.org/document/8711341'>IEEE Xplore</a>] 
-		</tr>
-
-
-	</tbody>
-</table>
-
-</div>
-<div class='copyright'>
-<small>© 2022 by Wenjie Yang</small>
-</div>
-</div>
-</div>
-</div>
-</body>
+                                <br />
+                                <tag class="yellow">IPCCC</tag>
+                                <i>IEEE International Performance Computing and Communications Conference, 2018</i>
+                                <br />
+                                [<a href="src/pub/ipccc18_yang_bfur.pdf">pdf</a>] [<a href="https://ieeexplore.ieee.org/document/8711341">IEEE Xplore</a>]
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="copyright">
+                <small>© 2022 by Wenjie Yang</small>
+            </div>
+        </div>
+    </body>
 </html>
